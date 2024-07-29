@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            height: 400px;
+            width:auto;
+            border: 2px solid red;
+            flex-flow: row wrap;
+            justify-content:left;
+            background-color: chartreuse;
+         }
+        .box {
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+            padding: 2px;
+            margin: 5px;
+        }
+        #box1 {
+            background-color: yellow;
+            flex-grow: 1;
+        }
+
+        #box2 {
+            background-color: green;
+            /* flex-grow: 3; */
+            flex-shrink: 2;
+
+        }
+
+        #box3 {
+            background-color: pink;
+            /* flex-grow: 3; */
+            flex-basis:100px;
+            }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">box number is 1 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero,
+                suscipit? Dolorem iste expedita saepe? Ea.</p>
+        </div>
+        <div class="box" id="box2">box number is 2 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero,
+                suscipit? Dolorem iste expedita saepe? Ea.</p>
+        </div>
+        <div class="box" id="box3">box number is 3 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero,
+                suscipit? Dolorem iste expedita saepe? Ea.</p>
+        </div>
+    </div>
+
+</body>
+</html>
