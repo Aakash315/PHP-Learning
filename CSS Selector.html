@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        h3{
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        div,p{
+            background-color: pink;
+            color:red;
+        }
+        div p{
+            background-color: yellow;
+        }
+        div >p{
+            background-color: yellowgreen;
+        }
+        div +p{
+            background-color: violet;
+        } 
+
+    </style>
+</head>
+<body>
+    <h3>CSS Selector</h3>
+    <div class="container">
+        <div class="para">
+            <ul>
+                <li><p>hello css</p></li>
+                <p>hello world</p>
+            </ul>
+            <p>hello php</p>
+        </div>
+        <p>hello html</p>
+    </div>
+    
+</body>
+</html>
