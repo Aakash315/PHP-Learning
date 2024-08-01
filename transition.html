@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid blue;
+            text-align: center;
+            background-color: skyblue;
+            transition: width 2s, hight 4s, transform 2s;
+        }
+        .box:hover{
+            width: 300px;
+            height: 300px;
+            transform: rotate(360deg);
+            font-size: 30px;
+            background-color: lightblue;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        img{
+            width: 250px;
+            height: 250px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1><b><u>hello world</u></b></h1>
+            <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, dolorem.
+            </i></p>
+        </div>
+        <div class="box">
+            <img src="cc.jpg" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>
